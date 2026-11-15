@@ -44,7 +44,7 @@ h1{margin:0 0 24px;padding-bottom:.06em;font:400 clamp(42px,6.5vw,80px)/1.05 Sea
 .description{max-width:500px;margin:0 auto;font-size:clamp(15px,1.4vw,18px);line-height:1.6;color:#fff;animation:rise 1.3s cubic-bezier(.16,1,.3,1) 1.8s both}
 form{width:min(300px,100%);margin:36px auto 0;animation:rise 1.3s cubic-bezier(.16,1,.3,1) 2.2s both}
 /* The password field: a single glass surface with no second ring. Focus brightens its own edge. */
-.entry-pill{position:relative;height:54px;border-radius:16px;border:1px solid rgba(255,255,255,.14);background:linear-gradient(104deg,rgba(253,253,253,.06) 5%,rgba(240,240,228,.11) 100%);-webkit-backdrop-filter:blur(25px);backdrop-filter:blur(25px);box-shadow:0 1px 3px rgba(0,0,0,.24),inset 0 1px 0 rgba(255,255,255,.06);isolation:isolate;transition:border-color .25s,box-shadow .25s}
+.entry-pill{position:relative;height:54px;border-radius:0;border:1px solid rgba(255,255,255,.14);background:linear-gradient(104deg,rgba(253,253,253,.06) 5%,rgba(240,240,228,.11) 100%);-webkit-backdrop-filter:blur(25px);backdrop-filter:blur(25px);box-shadow:0 1px 3px rgba(0,0,0,.24),inset 0 1px 0 rgba(255,255,255,.06);isolation:isolate;transition:border-color .25s,box-shadow .25s}
 .entry-pill:hover{border-color:rgba(255,255,255,.26)}
 .entry-pill:focus-within{border-color:rgba(255,255,255,.55);box-shadow:0 0 30px rgba(217,255,243,.1),0 1px 3px rgba(0,0,0,.24),inset 0 1px 0 rgba(255,255,255,.08)}
 .entry-pill::before{content:"";position:absolute;inset:-1px;border:1px solid #d9fff3;border-radius:inherit;box-shadow:0 0 18px rgba(217,255,243,.4),0 0 46px rgba(162,216,196,.24),inset 0 0 16px rgba(217,255,243,.12);opacity:0;pointer-events:none}
@@ -59,7 +59,7 @@ form{width:min(300px,100%);margin:36px auto 0;animation:rise 1.3s cubic-bezier(.
 .entry-pill input::placeholder{color:rgba(255,255,255,.46);opacity:1}
 .entry-pill input:-webkit-autofill{-webkit-text-fill-color:#fff;-webkit-box-shadow:0 0 0 1000px #121212 inset}
 .entry-pill input:focus-visible{outline:none}
-#verify{position:absolute;right:8px;top:8px;display:grid;place-items:center;width:36px;height:36px;border-radius:10px;color:rgba(255,255,255,.5);transition:color .2s,background .2s}
+#verify{position:absolute;right:8px;top:8px;display:grid;place-items:center;width:36px;height:36px;border-radius:0;color:rgba(255,255,255,.5);transition:color .2s,background .2s}
 #verify:hover{color:#fff;background:rgba(255,255,255,.08)}
 #verify:focus-visible{outline:2px solid #d9fff3;outline-offset:2px}
 #verify svg{width:16px;height:16px}
@@ -102,7 +102,7 @@ noscript{display:block;max-width:340px;margin:18px auto 0;font-size:13px;color:#
   canvas.width=Math.round(w*dpr);canvas.height=Math.round(h*dpr);canvas.style.width=w+'px';canvas.style.height=h+'px';
   ctx.setTransform(dpr,0,0,dpr,0,0);ctx.clearRect(0,0,w,h);
   var ox=((w/2-CELL/2)%CELL+CELL)%CELL-CELL,cols=Math.ceil((w-ox)/CELL)+1,rows=Math.ceil(h/CELL)+1,c,r;
-  ctx.strokeStyle='rgba(255,255,255,0.064)';ctx.lineWidth=1;ctx.beginPath();
+  ctx.strokeStyle='rgba(255,255,255,0.048)';ctx.lineWidth=1;ctx.beginPath();
   for(c=0;c<=cols;c++){var x=Math.round(ox+c*CELL)+.5;ctx.moveTo(x,0);ctx.lineTo(x,h);}
   for(r=0;r<=rows;r++){var y=r*CELL+.5;ctx.moveTo(0,y);ctx.lineTo(w,y);}
   ctx.stroke();
@@ -131,4 +131,4 @@ noscript{display:block;max-width:340px;margin:18px auto 0;font-size:13px;color:#
  new MutationObserver(function(){if(pill.getAttribute('data-state')==='ready'&&!enter.disabled)enter.click();}).observe(pill,{attributes:true,attributeFilter:['data-state']});
 })();
 </script>
-<script src="/brand-asset-library/vault-config.js?v=69548a902a1ac2844aa1"></script><script src="/brand-asset-library/gate.js?v=69548a902a1ac2844aa1"></script></body></html>
+<script src="/brand-asset-library/vault-config.js?v=f94ccf76e48ed1c63dd5"></script><script src="/brand-asset-library/gate.js?v=f94ccf76e48ed1c63dd5"></script></body></html>
